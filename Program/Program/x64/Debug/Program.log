@@ -1,2 +1,5 @@
 ﻿  Program.cpp
-  Program.vcxproj -> C:\Users\shdml\OneDrive\Desktop\C-Plus-Language\Program\x64\Debug\Program.exe
+C:\Users\shdml\OneDrive\Desktop\C-Plus-Language\Program\Program.cpp(78,2): error C2535: 'Marine::Marine(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+  C:\Users\shdml\OneDrive\Desktop\C-Plus-Language\Program\Program.cpp(74,2):
+  'Marine::Marine' 선언을 참조하십시오.
+  
