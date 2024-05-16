@@ -24,6 +24,7 @@
     <ProjectGuid>{50e280ab-36c5-4854-b961-77eaea71493e}</ProjectGuid>
     <RootNamespace>Class4thintherane</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Class4th (Inheritance)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
