@@ -11,7 +11,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class2th (Class)", "..\Clas
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class3th (Constructor and Destructor)", "..\Class3th (Constructor and Destructor)\Class3th (Constructor and Destructor).vcxproj", "{EB6E0B1C-F400-4BB4-88B0-F2E02AB8EB7D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class4th (intherane)", "..\Class4th (intherane)\Class4th (intherane).vcxproj", "{50E280AB-36C5-4854-B961-77EAEA71493E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class4th (Inheritance)", "..\Class4th (intherane)\Class4th (intherane).vcxproj", "{50E280AB-36C5-4854-B961-77EAEA71493E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class5th (Polymorphirm)", "..\Class5th (Polymorphirm)\Class5th (Polymorphirm).vcxproj", "{FD6EA295-22FA-4BFE-962A-91C50B86818D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,14 @@ Global
 		{50E280AB-36C5-4854-B961-77EAEA71493E}.Release|x64.Build.0 = Release|x64
 		{50E280AB-36C5-4854-B961-77EAEA71493E}.Release|x86.ActiveCfg = Release|Win32
 		{50E280AB-36C5-4854-B961-77EAEA71493E}.Release|x86.Build.0 = Release|Win32
+		{FD6EA295-22FA-4BFE-962A-91C50B86818D}.Debug|x64.ActiveCfg = Debug|x64
+		{FD6EA295-22FA-4BFE-962A-91C50B86818D}.Debug|x64.Build.0 = Debug|x64
+		{FD6EA295-22FA-4BFE-962A-91C50B86818D}.Debug|x86.ActiveCfg = Debug|Win32
+		{FD6EA295-22FA-4BFE-962A-91C50B86818D}.Debug|x86.Build.0 = Debug|Win32
+		{FD6EA295-22FA-4BFE-962A-91C50B86818D}.Release|x64.ActiveCfg = Release|x64
+		{FD6EA295-22FA-4BFE-962A-91C50B86818D}.Release|x64.Build.0 = Release|x64
+		{FD6EA295-22FA-4BFE-962A-91C50B86818D}.Release|x86.ActiveCfg = Release|Win32
+		{FD6EA295-22FA-4BFE-962A-91C50B86818D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
