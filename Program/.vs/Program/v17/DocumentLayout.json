@@ -3,9 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\C-Plus-Language\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{538906AC-1359-4F21-8F89-7A94D8651BE5}|..\\Class10th (Friend)\\Class10th (Friend).vcxproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Language\\Class10th (Friend)\\Cource.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{13C58CD6-C8B4-4AE8-B7A1-E058FFB20D41}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Language\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{13C58CD6-C8B4-4AE8-B7A1-E058FFB20D41}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -50,25 +47,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Cource.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Language\\Class10th (Friend)\\Cource.cpp",
-              "RelativeDocumentMoniker": "..\\Class10th (Friend)\\Cource.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Language\\Class10th (Friend)\\Cource.cpp",
-              "RelativeToolTip": "..\\Class10th (Friend)\\Cource.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGEAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-23T10:43:58.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Language\\Program\\Program.cpp",
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Language\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-22T09:04:14.055Z",
               "EditorCaption": ""
