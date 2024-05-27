@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class10th (Friend)", "..\Cl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class11th (Smart Pointer)", "..\Class11th (Smart Pointer)\Class11th (Smart Pointer).vcxproj", "{8956CFD8-AE1B-408D-90E7-9C8F522CE46F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class12th (Template)", "..\Class12th (Template)\Class12th (Template).vcxproj", "{4A4F177B-E111-4E90-A5F8-B5B610EFA852}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{8956CFD8-AE1B-408D-90E7-9C8F522CE46F}.Release|x64.Build.0 = Release|x64
 		{8956CFD8-AE1B-408D-90E7-9C8F522CE46F}.Release|x86.ActiveCfg = Release|Win32
 		{8956CFD8-AE1B-408D-90E7-9C8F522CE46F}.Release|x86.Build.0 = Release|Win32
+		{4A4F177B-E111-4E90-A5F8-B5B610EFA852}.Debug|x64.ActiveCfg = Debug|x64
+		{4A4F177B-E111-4E90-A5F8-B5B610EFA852}.Debug|x64.Build.0 = Debug|x64
+		{4A4F177B-E111-4E90-A5F8-B5B610EFA852}.Debug|x86.ActiveCfg = Debug|Win32
+		{4A4F177B-E111-4E90-A5F8-B5B610EFA852}.Debug|x86.Build.0 = Debug|Win32
+		{4A4F177B-E111-4E90-A5F8-B5B610EFA852}.Release|x64.ActiveCfg = Release|x64
+		{4A4F177B-E111-4E90-A5F8-B5B610EFA852}.Release|x64.Build.0 = Release|x64
+		{4A4F177B-E111-4E90-A5F8-B5B610EFA852}.Release|x86.ActiveCfg = Release|Win32
+		{4A4F177B-E111-4E90-A5F8-B5B610EFA852}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
