@@ -3,6 +3,8 @@
 #include <conio.h>
 #include <windows.h>
 #include <vector>
+#include <list>
+#include <deque>
 
 #define UP    72
 #define LEFT  75
@@ -11,10 +13,32 @@
 
 using namespace std;
 
+void Check(vector<const char *> & node, const char * arrow, int & health)
+{
+	if (node.back() == arrow) 
+	{
+		node.pop_back();
+	}
+	else
+	{
+		health--;
+	}
+}
+
+void View(int health)
+{
+	for (int i = 0; i < health; i++)
+	{
+		cout << "♥";
+	}
+
+	cout << endl;
+	cout << endl;
+
+}
+
 int main()
 {
-
-#pragma region 기본 템플릿 라이브러리
 
 #pragma region 선형 컨테이너
 
@@ -44,39 +68,133 @@ int main()
 
 #pragma region Rhythm Game
 
-	srand(time(NULL));
+	// srand(time(NULL));
 
-	vector<const char*> node;
+	// vector<const char*> node;
+	// char key = 0;
+	// int count = 4;
+	// int health = 5;
 
-	node.reserve(6);
+	// node.reserve(6);
 
-	int count = 4;
+	//	for (int i = 0; i < count; i++)
+	//	{
+	//		int random = rand() % 4;
+	//	
+	//		switch (random)
+	//		{
+	//		case 0 : node.push_back("↑");
+	//			break;
+	//		case 1 : node.push_back("←");
+	//			break;
+	//		case 2 : node.push_back("→");
+	//			break;
+	//		case 3 : node.push_back("↓");
+	//			break;
+	//		}
+	//	}
 
-	for (int i = 0; i < count; i++)
-	{
-		int random = rand() % 4;
+	//	while (health > 0)
+	//	{
+	//		View(health);
+	//	
+	//		for (const char* element : node)
+	//		{
+	//			cout << element << "  ";
+	//		}
+	//	
+	//		key = _getch();
+	//	
+	//		if (key == -32)
+	//		{
+	//			key = _getch();
+	//		}
+	//	
+	//		switch (key)
+	//		{
+	//		case UP: Check(node, "↑", health);
+	//			break;
+	//		case LEFT : Check(node, "←", health);
+	//			break;
+	//		case RIGHT : Check(node, "→", health);
+	//			break;
+	//		case DOWN : Check(node, "↓", health);
+	//			break;
+	//		}
+	//	
+	//		if (node.size() <= 0)
+	//		{
+	//			break;
+	//		}
+	//	
+	//		system("cls");
+	//	
+	//	}
 
-		switch (random)
-		{
-		case 0 : node.push_back("↑");
-			break;
-		case 1 : node.push_back("←");
-			break;
-		case 2 : node.push_back("→");
-			break;
-		case 3 : node.push_back("↓");
-			break;
-		}
-	}
+	// system("cls");
 
-	for (const char* element : node)
-	{
-		cout << element << "  ";
-	}
-
-
+	//	if (health <= 0)
+	//	{
+	//		cout << "Defeat" << endl;
+	//	}
+	//	else
+	//	{
+	//		cout << "Victory" << endl;
+	//	}
 
 #pragma endregion
+
+#pragma region List
+
+	// list<int> list;
+
+	// list.push_back(10);
+	// list.push_back(20);
+ 
+	// list.push_front(5);
+	// list.push_front(1);
+ 
+	// list.pop_back();
+	// list.pop_front();
+ 
+	// cout << "list의 front : " << list.front() << endl;
+	// cout << "list의 back  : " << list.back() << endl;
+
+#pragma endregion
+
+#pragma region String
+
+	// string name = "Alistar";
+
+	// name.append(" Champion");
+
+	//	if (name.compare("Alistar"))
+	//	{
+	//		cout << "문자열이 같습니다." << endl;
+	//	}
+
+	// name.clear();
+
+	// cout << "name 변수의 값은 : " << name << endl;
+
+#pragma endregion
+
+#pragma region Deque
+
+	// deque<int> deque;
+
+	// deque.push_front(10);
+	// deque.push_back(20);
+	// deque.push_back(30);
+	// deque.push_back(40);
+
+	// deque.pop_back();
+	// deque.pop_front();
+
+	//	for (int i = 0; i < deque.size(); i++)
+	//	{
+	//		cout << "deque[" << i << "] 값은 : " << deque[i] << endl;
+	//	}
 
 #pragma endregion
 
