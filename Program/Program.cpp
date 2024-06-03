@@ -1,105 +1,117 @@
 ﻿#include <iostream>
+#include <conio.h>
+#include <windows.h>
 
 using namespace std;
 
-class Item
+#define UP    72
+#define LEFT  75
+#define RIGHT 77
+#define DOWN  80
+
+void Position(int x, int y)
+{
+	COORD position = { x, y };
+
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
+}
+
+class Input
 {
 private:
-	int price;
+	int x;
+	int y;
+	char key;
+	const char* shape;
 public:
-	Item(int price)
+	Input()
 	{
-		cout << "Constructor" << endl;
-		this->price = price;
+		x = 0;
+		y = 1;
+		shape = "▲";	
 	}
-	Item(Item& item)
+
+	void Renderer()
 	{
-		cout << "Copy Constructor" << endl;
-		price = item.price;
+		Position(x, y);
+
+		cout << shape;
+	}
+
+	void GetKey()
+	{
+		key = _getch();
+
+		if (key == -32)
+		{
+			key = _getch();
+		}
+
+		switch (key)
+		{
+			case UP: y -= 2;
+				break;
+			case LEFT: x -= 2;
+				break;
+			case RIGHT: x += 2;
+				break;
+			case DOWN: y += 2;
+				break;
+		}
 	}
 };
 
-class Card
+class Inventory
 {
+private:
+	int size;
+	int width;
+	Input input;
 public:
-	virtual void show() = 0;
-	virtual void skill() = 0;
-	virtual void effect() = 0;
+	Inventory(int size, int width)
+	{
+		this->size = size;
+		this->width = width;
+	}
 
+	void UpDate()
+	{
+		input.GetKey();
+	}
+
+	void Renderer()
+	{
+		Position(0, 0);
+
+		for (int i = 0; i < size; i++)
+		{
+			if (i != 0 && i % width == 0)
+			{
+				cout << endl << endl;
+			}
+			cout << "□";
+		}
+		input.Renderer();
+	}
 };
 
-class Legend : Card
-{
-public:
-	void show()  override
-	{
-		cout << "Legend Card" << endl;
-	}
-	void skill() override
-	{
-		cout << "Legend skill" << endl;
-	}
-	void effect() final
-	{
-		cout << "Legend effect" << endl;
-	}
-};
 
-class Unqiue : Legend
-{
-public:
-	Unqiue()
-	{
-		effect();
-	}
-};
 
 int main()
 {
 
-#pragma region R value and L value
+#pragma region 인벤토리
 
-	// L value type
-	/*
-	int data = 10;
+	Inventory inventory(12, 4);
 
-	cout << data << endl;
+	while (true)
+	{
+		inventory.Renderer();
 
-	int& left1 = data;
+		inventory.UpDate();
 
-	left1= 20;
-
-	cout << data << endl;
-	*/
-
-	// R value type
-	/*
-	int count = 0;
-
-	int&& right1 = 10;
-
-	cout << "right1의 값은 : " << right1 << endl;
-
-	right1 = 30;
-
-	cout << "right1의 값은 : " << right1 << endl;
-	*/
-
-#pragma endregion
-
-#pragma region 복사 생략 (Copy Elision)
-
-	// 함수의 반환 값을 모두 사용하거나 초기화하는 경우에 생기는 불필요한 임시 객체를 최적화 하거나 제거하는데 사용되는 컴파일러 기술.
-
-	// Item item1(10000);
-
-	// Item item2(item1);
-
-#pragma endregion
-
-#pragma region Final
-
-
+		system("cls");
+	}
 
 #pragma endregion
 
